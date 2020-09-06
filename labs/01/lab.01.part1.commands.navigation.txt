@@ -15,7 +15,8 @@ $ ls<ENTER>
 
 Copy and paste the output of ls below.
 ----------
-
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	get-pip.py
 
 
 
@@ -28,7 +29,8 @@ $ ls -l Documents<ENTER>
 
 Copy and paste the first *two lines* of output below.
 ----------
-
+total 0
+drwxr-xr-x@ 2 checkx  staff  64 Aug 31 17:18 Zoom
 
 
 
@@ -41,7 +43,7 @@ $ ls -a Documents
 
 Copy and paste the first *two lines* of output below.
 ----------
-
+.		..		.localized	Zoom
 
 
 
@@ -54,7 +56,7 @@ $ ls doesnotexist
 
 Copy and paste the output below.
 ----------
-
+ls: doesnotexist: No such file or directory
 
 
 
@@ -64,7 +66,7 @@ Copy and paste the output below.
 5.  What key do I press to go to the previous command?
 ----------
 
-
+Up Arrow
 
 
 
@@ -73,15 +75,15 @@ Copy and paste the output below.
 6.  Name two flags that we used in this exercise.
 ----------
 
-
-
+-a
+-l
 
 
 
 ==========
 7.  What was the main command that we used throughout this exercise?
 ----------
-
+Enter
 
 
 
@@ -103,7 +105,7 @@ $ foo<ENTER>
 
 Copy and paste the output below.
 ----------
-
+zsh: command not found: foo
 
 
 
@@ -117,7 +119,7 @@ Copy and paste the output below.
 Copy and paste the output below.
 ----------
 
-
+zsh: command not found: foo
 
 
 
@@ -130,9 +132,10 @@ $ ls -a Desktop
 Identify the command, flag, argument, and prompt:
 ----------
 
-
-
-
+prompt: $
+command: ls
+flag: -a
+argument: Desktop
 
 Lab 1 / Part 2 - Navigating the File System
 ==========
@@ -146,7 +149,7 @@ Follow the instructions line-by-line.
 ==========
 12. Open a new terminal window. Create a directory called mtec1002. What command did you use?
 ----------
-
+$ mkdir mtec1002
 
 
 
@@ -155,7 +158,7 @@ Follow the instructions line-by-line.
 ==========
 13. Change your directory so that you're in mtec1002. What command did you use?
 ----------
-
+cd mtec1002
 
 
 
@@ -172,7 +175,7 @@ If it doesn't ask for help before moving on!
 
 Copy and paste the output of pwd below.
 ----------
-
+/Users/checkx/mtec1002
 
 
 
@@ -187,7 +190,7 @@ $ ls
 Copy and paste the output below.
 ----------
 
-
+animals
 
 
 
@@ -200,7 +203,7 @@ $ ls
 
 Copy and paste the output below.
 ----------
-
+animals	food
 
 
 
@@ -215,7 +218,7 @@ $ ls
 Copy and paste the output below.
 ----------
 
-
+animals	foo	food
 
 
 
@@ -228,7 +231,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
+/Users/checkx/mtec1002/foo/bar/baz/qux
 
 
 
@@ -243,7 +246,7 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
+/Users/checkx/mtec1002/foo/bar
 
 
 
@@ -256,7 +259,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
+/Users/checkx/mtec1002/foo/bar/baz/qux
 
 
 
@@ -270,7 +273,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
+/Users/checkx/mtec1002
 
 
 
@@ -285,7 +288,9 @@ $ ls -l
 
 Copy and paste the first 3 lines from the output into the space below.
 ----------
-
+total 0
+drwxr-xr-x  3 checkx  staff  96 Sep  5 23:04 foo
+drwxr-xr-x  2 checkx  staff  64 Sep  5 23:04 food
 
 
 
@@ -300,7 +305,7 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-
+/Users/checkx
 
 
 
@@ -314,7 +319,7 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-
+/Volumes
 
 
 
@@ -328,7 +333,7 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-
+/Volumes
 
 
 
@@ -342,6 +347,7 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
+/Users/checkx/mtec1002
 
 
 
@@ -355,7 +361,7 @@ $ hostname
 Copy and paste the output into the space below.
 ----------
 
-
+Checkxs-Air.fios-router.home
 
 
 
@@ -364,7 +370,7 @@ Copy and paste the output into the space below.
 28. Make sure you're back in your mtec1002, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
 ----------
 
-
+pwd
 
 
 
@@ -394,10 +400,11 @@ lemon
 
 Write the one command you used below:
 ----------
-
-
-
-
+mkdir pineapple
+mkdir orange
+mkdir strawberry
+mkdir lemon
+ls
 
 
 ==========
@@ -406,7 +413,7 @@ Write the one command you used below:
 Write the command you used to create the directory below:
 ----------
 
-
+mkdir aardvark
 
 
 
@@ -417,6 +424,8 @@ Write the command you used to create the directory below:
 What is the modified date of the aardvark directory?
 ----------
 
+aardvark	food		orange		strawberry
+foo		lemon		pineapple
 
 
 
@@ -431,7 +440,7 @@ What is the modified date of the aardvark directory?
 
 What command did you use?
 ----------
-
+mkdir -p foo/bar/qux
 
 
 
@@ -442,7 +451,7 @@ What command did you use?
 
 What command did you use?
 ----------
-
+cd ~/baz 
 
 
 
@@ -454,7 +463,7 @@ What command did you use?
 What command did you use?
 ----------
 
-
+cd ~/foo
 
 
 
@@ -463,7 +472,7 @@ What command did you use?
 36. What command is used to delete empty directories?
 ----------
 
-
+rmdir
 
 
 
@@ -472,7 +481,7 @@ What command did you use?
 37. What command is used to print out your current working directory?
 ----------
 
-
+hostname
 
 
 
@@ -480,7 +489,7 @@ What command did you use?
 ==========
 38. What flag do I pass to ls to print out all files?
 ----------
-
+ls -alt Desktop
 
 
 
@@ -490,15 +499,15 @@ What command did you use?
 39. What's the shortcut for home directory?
 ----------
 
-
-
-
-
+pwd 
+cd
+pwd
+cd -
 
 ==========
 40. What's a pathname?
 ----------
-
+A pathname is the general name of a file or directory.
 
 
 
@@ -507,7 +516,7 @@ What command did you use?
 ==========
 41. What is a directory?
 ----------
-
+A directory is a cataloging structure on a file system that references other files.
 
 
 
@@ -516,3 +525,4 @@ What command did you use?
 ==========
 42. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
 ----------
+Absolute paths are paths expressed as starting from root.
